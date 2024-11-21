@@ -1,4 +1,4 @@
-# Szablon dyplomu PWr
+# Szablon dyplomu PWr zgodny z Overleaf
 
 [For english readme click
 here](https://github.com/rkubosz/dyplompwr/blob/master/doc/manual.pdf)
@@ -6,6 +6,7 @@ here](https://github.com/rkubosz/dyplompwr/blob/master/doc/manual.pdf)
 Ten projekt dostarcza nieoficjalny szablon pracy dyplomowej dla studentów
 Politechniki Wrocławskiej. Ten szablon jest przeznaczony do zastosowania z
 systemem składu tekstu [**LaTeX**](https://pl.wikipedia.org/wiki/LaTeX).
+Jest także zgodny z Overleaf, przy użyciu kompilatora LuaLaTeX/XeLaTeX.
 
 Szablon jest kompatybilny z [wymaganiami Wydziału
 Chemicznego](http://wch.pwr.edu.pl/fcp/6GBUKOQtTKlQhbx08SlkTUAJQX2o8DAoHNiwFE1xVSXtVFVZpCFghUHcKVigEQUw/36/public/druki/duplomanci/ii_stopnia/21.doc) odnośnie
@@ -54,21 +55,21 @@ pracy dyplomowej.}
 ```
 
 Proste przykłady użycia klasy dyplompwr [jest zaprezentowany w tym
-folderze.](https://github.com/rkubosz/dyplompwr/tree/master/examples)
+folderze.](https://github.com/alkus88/dyplompwr/tree/master/examples)
 
 ## Instalacja
 
-[**Dyplompwr** można pobrać bezpośrednio
-tutaj.](https://github.com/rkubosz/dyplompwr/releases/latest)
+[**Dyplompwr zgodny z Overleaf** można pobrać bezpośrednio
+tutaj.](https://github.com/alkus88/dyplompwr/releases/latest)
 
-Pobrane archiwum zip należy rozpakować i otrzymany katalog `dyplompwr` zainstalować
+Pobrane archiwum zip należy rozpakować i zawartość otrzymanego katalogu `dyplompwr` zainstalować
 w sposób wybrany z poniższej listy:
-* umieszczenie w katalogu zawierajacym główny plik `*.tex` pracy dyplomowej
+* umieszczenie w katalogu zawierajacym główny plik `*.tex` pracy dyplomowej - dedykowane dla Overleaf
 * umieszczenie w katalogu:
     * Windows 7 i wyżej:  `C:\Users\twoja nazwa użytkownika\texmf\tex\latex\local\`
     * Linux:    `~/texmf/tex/latex/local/`
     * OSX:      `/Users/twoja nazwa użytkownika/Library/texmf/tex/latex/local/`
-
+      
 
 Użytkownicy Arch Linux mogą zaintalować pakiet `dyplompwr` z repozytorium
 [AUR](https://aur.archlinux.org/packages/dyplompwr/).
@@ -82,13 +83,29 @@ W celu stworzenia ładnej i zgodnej z zaleceniami strony tytułowej należy
 zainstalować dodatkowe fonty (URW Garamond i URW Classico), które domyślnie nie
 są dostępne w dystrybucjach LaTeXa.
 
-Dokładna instrukcja instalacji tych fontów (po angielsku) znajduje się na
-https://www.tug.org/fonts/getnonfreefonts/. Użytkownicy Arch Linux korzystający
-z AUR powinni mieć te zależności automatycznie rozwiązane.
+Fonty znajdują się w katalogu fonts. Instaluje się je umieszczając następujący kod w preambule:
+% URW Garamond
+\setmainfont{GaramondNo8-Reg}[
+    Path=fonts/, % Ścieżka do plików
+    Extension=.ttf, % Rozszerzenie pliku
+    BoldFont=GaramondNo8-Med.ttf, % Font pogrubiony
+    ItalicFont=GaramondNo8-Ita.ttf, % Font kursywa
+    BoldItalicFont=GaramondNo8-MedIta.ttf % Font pogrubiona kursywa
+]
+
+% URW Classico
+\setsansfont{URWClassico-Regular}[
+    Path=fonts/, % Ścieżka do katalogu z fontami
+    Extension=.ttf, % Rozszerzenie pliku
+    BoldFont=URWClassico-Bold.ttf, % Font pogrubiony
+    ItalicFont=URWClassico-Italic.ttf, % Font kursywa
+]
+\usepackage{polyglossia}
+\setdefaultlanguage{polish}
 
 ## Autorzy
 
-Pakiet stworzyłem na podstawie wcześniej stworzonych pakietów autorstwa [dra
+Pakiet stworzyłem na podstawie wcześniej stworzonych pakietów autorstwa [rkubosz](https://github.com/rkubosz), a on z kolei [dra
 Andrzeja Giniewicza](https://github.com/aginiewicz/pwrmgr) oraz [dra Wojciecha
 Myszki](https://kmim.wm.pwr.edu.pl/myszka/projekty/klasa-do-skladu-pracy-dyplomowej-magisterskiej-i-inzynierskiej-na-wydziale-mechanicznym-politechniki-wroclawskiej/).
 
