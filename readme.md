@@ -107,9 +107,10 @@ Fonty znajdują się w katalogu fonts. Instaluje się je umieszczając następuj
 
 ## Autorzy
 
-Pakiet stworzyłem na podstawie wcześniej stworzonych pakietów autorstwa [rkubosz](https://github.com/rkubosz), a on z kolei [dra
-Andrzeja Giniewicza](https://github.com/aginiewicz/pwrmgr) oraz [dra Wojciecha
-Myszki](https://kmim.wm.pwr.edu.pl/myszka/projekty/klasa-do-skladu-pracy-dyplomowej-magisterskiej-i-inzynierskiej-na-wydziale-mechanicznym-politechniki-wroclawskiej/).
+Pakiet został stworzony na podstawie prac:
+* [rkubosz](https://github.com/rkubosz)
+* [dra Andrzeja Giniewicza](https://github.com/aginiewicz/pwrmgr)
+* [dra Wojciecha Myszki](https://kmim.wm.pwr.edu.pl/myszka/projekty/klasa-do-skladu-pracy-dyplomowej-magisterskiej-i-inzynierskiej-na-wydziale-mechanicznym-politechniki-wroclawskiej/).
 
 ## Licencja
 
