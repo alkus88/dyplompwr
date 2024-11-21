@@ -52,7 +52,7 @@
 		\def\thesisheader{PRACA DYPLOMOWA}
 	\fi
 	\if@engineer
-		\def\thesisheader{PRACA IN\.{Z}YNIERSKA}
+		\def\thesisheader{PRACA INŻYNIERSKA}
 	\fi
 	\def\logo{logopwr/pl.pdf}
 \fi
@@ -95,12 +95,12 @@
 			\if@pl
 				\put(56,-28){
 					\makebox(0,0)[cb]{
-				\fontsize{16pt}{18pt}\usefont{T1}{uop}{m}{n}{\@faculty}}}
+				\fontsize{16pt}{18pt}\selectfont\addfontfeatures{Language=Polish}{\@faculty}}}
 			\fi
 			\if@eng
 				\put(54,-33){
 					\makebox(0,0)[cb]{
-				\fontsize{16pt}{18pt}\usefont{T1}{uop}{m}{n}{\@faculty}}}
+				\fontsize{16pt}{18pt}\selectfont\addfontfeatures{Language=Polish}{\@faculty}}}
 			\fi
 
 			% ramka wokół tytułu pracy, autora i promotora
@@ -111,21 +111,21 @@
 			}
 
 			% umiejscowienie tekstów, jak nagłówek, tytuł, nazwiska autora i promotora itd.
-			\put(61,-75){\makebox(0,0)[cb]{ \fontsize{32pt}{34pt} \usefont{T1}{ugm}{m}{n}{\thesisheader}}}
+			\put(61,-75){\makebox(0,0)[cb]{ \fontsize{32pt}{34pt} \selectfont\addfontfeatures{Language=Polish}{\thesisheader}}}
 
 			\put(61,-95){\makebox(0,0)[t]{\parbox{115mm}{
-			\onehalfspacing\centering\fontsize{16pt}{18pt}\usefont{T1}{ugm}{m}{n} \@title \\ \@titlen}}}
+			\onehalfspacing\centering\fontsize{15pt}{17pt}\selectfont\addfontfeatures{Language=Polish} \@title \\ \@titlen}}}
 
 			\put(61,-145){\makebox(0,0)[t]{\parbox{115mm}{\onehalfspacing
-			\centering\fontsize{14pt}{16pt}\usefont{T1}{ugm}{m}{n}\@author \\ \xd\@supervisor}}}
+			\centering\fontsize{14pt}{16pt}\selectfont\addfontfeatures{Language=Polish}\@author \\ \xd\@supervisor}}}
 
 			\put(122,-175){\makebox(0,0)[tr]{\parbox{115mm}{
-			\onehalfspacing\fontsize{12pt}{14pt}\usefont{T1}{ugm}{m}{n}\raggedleft \@keywords}}}
+			\onehalfspacing\fontsize{12pt}{14pt}\selectfont\addfontfeatures{Language=Polish}\raggedleft \@keywords}}}
 
 			\put(0,-200){\makebox(0,0)[tl]{\parbox{115mm}{\onehalfspacing
-			\fontsize{10pt}{12pt}\usefont{T1}{ugm}{m}{n}\raggedright \@abstract}}}
+			\fontsize{10pt}{12pt}\selectfont\addfontfeatures{Language=Polish}\raggedright \@abstract}}}
 
-			\put(61,-250){\makebox(0,0){\fontsize{14pt}{16pt}\usefont{T1}{ugm}{m}{n}{\@city \ \the\year}}}
+			\put(61,-250){\makebox(0,0){\fontsize{14pt}{16pt}\selectfont\addfontfeatures{Language=Polish}{\@city \ \the\year}}}
 		\end{picture}
 
 		\let\footnotesize\small
