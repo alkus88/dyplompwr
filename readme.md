@@ -84,6 +84,7 @@ zainstalować dodatkowe fonty (URW Garamond i URW Classico), które domyślnie n
 są dostępne w dystrybucjach LaTeXa.
 
 Fonty znajdują się w katalogu fonts. Instaluje się je umieszczając następujący kod w preambule:
+```latex
 % URW Garamond
 \setmainfont{GaramondNo8-Reg}[
     Path=fonts/, % Ścieżka do plików
@@ -102,6 +103,7 @@ Fonty znajdują się w katalogu fonts. Instaluje się je umieszczając następuj
 ]
 \usepackage{polyglossia}
 \setdefaultlanguage{polish}
+```
 
 ## Autorzy
 
